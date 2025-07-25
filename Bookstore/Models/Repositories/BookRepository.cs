@@ -7,27 +7,29 @@ namespace Bookstore.Models.Repositories
         public BookRepository()
         {
             books = new List<Book>();
-            new Book
+
+            books.Add(new Book
             {
                 Id = 1,
                 Title = "C# Programming",
                 Description = "Description"
-            };
+            });
 
-            new Book
+            books.Add(new Book
             {
                 Id = 2,
                 Title = "Python programming",
                 Description = "No description"
-            };
+            });
 
-            new Book
+            books.Add(new Book
             {
                 Id = 3,
                 Title = "ASP.NET Programming",
                 Description = "Description"
-            };
+            });
         }
+
         public void Add(Book entity)
         {
             books.Add(entity);  

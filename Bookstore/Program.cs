@@ -6,8 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddMvc();
-builder.Services.AddSingleton<IBookstoreRepository<Author>,AuthorRepository>(); 
-builder.Services.AddSingleton<IBookstoreRepository<Book>,BookRepository>();
+builder.Services.AddSingleton<IBookstoreRepository<Author>, AuthorRepository>();
+builder.Services.AddSingleton<IBookstoreRepository<Book>, BookRepository>();
 
 var app = builder.Build();
 
@@ -17,7 +17,7 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/Error");
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
-    
+
 
 }
 
@@ -37,6 +37,6 @@ app.UseEndpoints(endpoints =>
     endpoints.MapRazorPages();
 });
 
-app.UseStaticFiles(); 
+app.UseStaticFiles();
 app.MapRazorPages();
 app.Run();

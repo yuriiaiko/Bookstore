@@ -8,7 +8,7 @@ namespace Bookstore.Models.Repositories
         {
             authors = new List<Author>()
             {
-                new Author() {Id = 1, FullName="Rim CHERROUK"},
+                new Author() {Id = 1, FullName="Rima CHERROUK"},
                 new Author() {Id = 2, FullName = "Aya ACHARY" },
                 new Author() {Id = 3, FullName = "Adam CHERROUK"}
             };
